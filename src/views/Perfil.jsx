@@ -8,7 +8,7 @@ export default function Home() {
   const [usuario, setUsuarioLocal] = useState({});
 
   const getUsuarioData = async () => {
-    const urlServer = "process.env.REACT_APP";
+    const urlServer = "process.env.VITE_BACKEND_URL";
     const endpoint = "/usuarios";
     const token = localStorage.getItem("token");
 
