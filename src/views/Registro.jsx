@@ -13,7 +13,7 @@ export default function RegistroForm() {
   };
 
   const registrarUsuario = async () => {
-    const urlServer = "process.env.VITE_BACKEND_URL";
+    const urlServer = "process.env.REACT_APP";
     const endpoint = "/usuarios";
     try {
       await axios.post(urlServer + endpoint, usuario);
