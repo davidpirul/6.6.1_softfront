@@ -16,7 +16,7 @@ export default function RegistroForm() {
   };
 
   const iniciarSesion = async () => {
-    const urlServer = "http://localhost:3000";
+    const urlServer = "process.env.VITE_BACKEND_URL";
     const endpoint = "/login";
     const { email, password } = usuario;
     try {
