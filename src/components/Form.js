@@ -5,7 +5,7 @@ export default function Form() {
 
     const registrarUsuario = async () => {
         try {
-            await axios.post("process.env.REACT_APP", {usuario})
+            await axios.post("process.env.VITE_BACKEND_URL", {usuario})
             alert("Usuario agregado con éxito")
         } catch (error) {
             alert("Algo salió mal")
