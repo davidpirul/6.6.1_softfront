@@ -16,7 +16,7 @@ export default function RegistroForm() {
   };
 
   const iniciarSesion = async () => {
-    const urlServer = "process.env.VITE_BACKEND_URL";
+    const urlServer = "process.env.REACT_APP";
     const endpoint = "/login";
     const { email, password } = usuario;
     try {
